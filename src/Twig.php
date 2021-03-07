@@ -24,7 +24,7 @@ class Twig implements ViewInterface
     {
         $html = $this->environment->render($template, $data);
 
-        $response->getBody->write($html);
+        $response->getBody()->write($html);
 
         return $response;
     }
