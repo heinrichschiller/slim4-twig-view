@@ -1,0 +1,36 @@
+{
+    "name": "heinrichschiller/slim4-twig-view",
+    "description": "Slim4-Twig-View",
+    "keywords": ["slim","framework","view","template","mustache"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Heinrich Schiller",
+            "email": "info@heinrich-schiller.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3",
+        "twig/twig": "^3.0",
+        "monolog/monolog": "^2.2"
+    },
+    "require-dev": {
+        "slim/slim": "^4.7",
+        "phpunit/phpunit": "^9.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slim\\Views\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit"
+    }
+}
